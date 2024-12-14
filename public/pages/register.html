@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Finanças">
+    <meta name="keywords" content="financas, organização, financeiro, site financeiro">
+    <meta name="author" content="Cristian Galvão">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="../assets/login/logo.png" type="image/png"> 
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-logo">
+            <img src="../assets/login/logo.png" style="width: 70%;height: 70%;">
+        </div>
+        <h1>Olá!</h1>
+        <p id="p_subtitle">Cadastre-se e transforme suas finanças em um caminho de sucesso!</p>
+        <form id="registerForm">
+
+            <div class="textbox">
+                <input type="text" placeholder="Nome" id="name" name="name" required>
+            </div>
+
+            <div class="textbox">
+                <input type="text" placeholder="Sobrenome" id="last_name" name="last_name" required>
+            </div>
+
+            <div class="textbox">
+                <input type="email" placeholder="Email" id="email" name="email" required>
+            </div>
+
+            <div class="textbox">
+                <input type="password" placeholder="Senha" id="password" name="password" required>
+            </div>
+
+            <span id="password_8_characters" style="display: none; color: red;margin-bottom: 20px;margin-left: 0;width: 100%;font-size: 14px;padding: 0;">Senha deve ter mais de 8 caracteres</span>
+
+            <div class="textbox">
+                <input type="password" placeholder="Confirmar Senha" id="confirmPassword" required>
+            </div>
+
+            <span id="confirmPasswordTopassword" style="display: none; color: red;margin-bottom: 20px;margin-left: 0;width: 100%;font-size: 14px;padding: 0;">Senhas não coincidem</span>
+
+            <button type="Cadastrar">Entrar</button>            
+        </form>
+    </div>
+
+    <script src="../functions/register/register.js"></script>
+
+</body>
+</html>

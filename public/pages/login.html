@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Finanças">
+    <meta name="keywords" content="financas, organização, financeiro, site financeiro">
+    <meta name="author" content="Cristian Galvão">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="../assets/login/logo.png" type="image/png">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="login-box">
+            <img src="../assets/login/logo.png" style="width: 70%;height: 70%;">
+            <h2>Bem-Vindo</h2>
+            <p style="margin-top: 10px;margin-bottom: 10px;color: grey;font-size: 14px;">Entre na sua conta para
+                gerenciar suas finanças!</p>
+            <form id="login">
+                <div class="textbox">
+                    <input type="email" id="email" name="email" placeholder="E-mail" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" id="password" name="password" placeholder="Senha" required>
+                </div>
+                <p class="forget_password"> <a href="./forget_password.html">Esqueceu a Senha?</a></p>
+                <button type="submit" class="btn">Entrar</button>
+                <p class="register">Não tem uma conta? <a href="./register.html">Cadastre-se</a></p>
+            </form>
+
+            <div class="third-party-join__container">
+                <div class="third-party-join__reg-option">
+                    <span class="third-party-join__line-wrapper">
+                        <span class="third-party-join__line"></span>
+                    </span>
+                    <span class="third-party-join__content">
+                        <span class="third-party-join__or-span">ou</span>
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- Google -->
+            <div id="g_id_onload"
+                data-client_id="48840117188-tmq37jnojr2d5g2pn3vfpqdoe959558a.apps.googleusercontent.com"
+                data-callback="handleCredentialResponse">
+            </div>
+
+            <div class="g_id_signin" style="display: flex;justify-content: center;align-items: center;"
+                data-type="standard"></div>
+            <!-- Google fim -->
+
+        </div>
+    </div>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="../functions/login/login_google.js"></script>
+
+</body>
+
+</html>
